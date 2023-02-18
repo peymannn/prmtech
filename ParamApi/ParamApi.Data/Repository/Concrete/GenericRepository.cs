@@ -25,8 +25,7 @@ namespace ParamApi.Data.Repository.Concrete
 
         public virtual async Task<Entity> GetByIdAsync(int entityId)
         {
-            return await entities.FindAsync(entityId);
-            //return await entities.Where(entity => EF.Property<int>(entity, "CustomerNumber").Equals(entityId)).SingleOrDefaultAsync();
+            return await entities.FindAsync(entityId);           
         }
 
         public async Task InsertAsync(Entity entity)

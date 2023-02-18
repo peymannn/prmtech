@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ParamApi.Base\ParamApi.Base.csproj" />
+    <ProjectReference Include="..\ParamApi.Data\ParamApi.Data.csproj" />
+    <ProjectReference Include="..\ParamApi.Dto\ParamApi.Dto.csproj" />
+  </ItemGroup>
+
 </Project>

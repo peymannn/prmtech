@@ -1,4 +1,4 @@
-﻿namespace ParamApi.Base.Model
+﻿namespace ParamApi.Base
 {
     public class BaseModel
     {

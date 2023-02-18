@@ -1,4 +1,4 @@
-﻿using ParamApi.Base.Model;
+﻿using ParamApi.Base;
 
 namespace ParamApi.Data.Model
 {

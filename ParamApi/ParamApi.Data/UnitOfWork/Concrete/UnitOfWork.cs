@@ -13,6 +13,7 @@ namespace ParamApi.Data.Uow
 
 
         public IGenericRepository<Account> AccountRepository { get; private set; }
+        public IGenericRepository<Person> PersonRepository { get; private set; }
 
 
         public UnitOfWork(AppDbContext dbContext)
@@ -22,6 +23,7 @@ namespace ParamApi.Data.Uow
 
 
             AccountRepository = new GenericRepository<Account>(dbContext);
+            PersonRepository = new GenericRepository<Person>(dbContext);
         }
 
 

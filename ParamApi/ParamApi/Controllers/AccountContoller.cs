@@ -17,14 +17,12 @@ namespace ParamApi.Controllers
             this.unitOfWork = unitOfWork;
         }
 
-
         [HttpGet]
         public async Task<IActionResult> Get()
         {
             var accounts = await unitOfWork.AccountRepository.GetAllAsync();
             return Ok(accounts);
         }
-
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
@@ -37,7 +35,6 @@ namespace ParamApi.Controllers
             }
             return Ok(account);
         }
-
 
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] Account account)
@@ -56,7 +53,6 @@ namespace ParamApi.Controllers
 
             return CreatedAtAction("GetById", new { account.Id }, account);
         }
-
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Put(int id,[FromBody] Account account)
@@ -81,7 +77,6 @@ namespace ParamApi.Controllers
 
             return Ok();
         }
-
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
